@@ -44,7 +44,7 @@ function changeDirection(index, value) {
 function getLogoURL() {
     // return the default logo if the parameter is not set
     if (!params.has("logo")) {
-        return "/logos/default.svg"
+        return "/logos/lottech.svg"
     }
     
     return params.get("logo");
