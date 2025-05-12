@@ -1,19 +1,33 @@
-# DVD Screensaver
-A simple, easily customizable website, made with the classic HTML + CSS + JS trio, that simulates the DVD screensaver.
+# Lottech Screensaver
+
+A simple, customizable website that simulates the classic DVD screensaver bounce effect using your own logo. Built with plain HTML, CSS, and JavaScript.
 
 ## What is this?
-***Bouncing DVD Logo**, or **DVD Screensaver**, refers to the animated screensaver commonly found on American DVD players, in which the DVD Video logo bounces to different parts of the screen and changes color. Online and in pop culture, people brag and joke about seeing the logo land perfectly in the corner of the screen.*
 
-\- [knowyourmeme.com](https://knowyourmeme.com/memes/bouncing-dvd-logo)
+Inspired by the classic DVD Video logo screensaver that bounces around the screen and changes coloe. The LotTech logo bounces around the screen, changing direction and optionally color when it hits the edges.
+
+### Local Development
+
+To run locally:
+1. Clone this repository
+2. Open the directory in a terminal
+3. Start a local server (e.g., `python -m http.server`)
+4. Open `http://localhost:8000` in your browser
 
 ## URL Parameters
-There are a couple of things you can customize, using URL query parameters:
-* `logo` - the link to a logo in an SVG format
-* `initialColor` - the color of the logo upon loading the website
-* `randomizeColor` - specifies if the color of the logo should be randomized after every bounce
-* `speed` - a speed in which the logo will move
+
+Customize the screensaver with these URL parameters:
+* `logo` - Link to a custom logo in SVG format
+* `initialColor` - Starting color of the logo (default: white)
+* `randomizeColor` - Set to "false" or "0" to keep a constant color
+* `speed` - Movement speed of the logo (default: 0.8)
+
+Example: `?logo=./logos/custom.svg&initialColor=red&speed=1.2`
+
+## Using as an Actual Screensaver
+
+### macOS
+Use WebViewScreenSaver, SaverLab, or another tool that can display web content as a screensaver.
 
 ## License
 This project is licensed under the MIT License - see the [`LICENSE.txt`](LICENSE.txt) file for details.
-
-As with all my projects, contributions are highly appreciated!

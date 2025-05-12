@@ -101,7 +101,7 @@ if (params.has("randomizeColor") && params.get("randomizeColor") in ["false", "0
     randomizeColor = false;
 }
 
-const speed = params.get("speed") || 0.8;
+const speed = params.get("speed") || 10;
 
 // variables
 let x = randint(1, window.innerWidth - dimensions[0] - 1);
